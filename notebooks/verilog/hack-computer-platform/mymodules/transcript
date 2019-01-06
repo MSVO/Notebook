@@ -1,0 +1,437 @@
+# Loading project Computer
+# Compile of computer.v failed with 2 errors.
+# Compile of other_modules.v was successful.
+# Compile of program_counter.v was successful.
+# Compile of ram.v was successful.
+# 4 compiles, 1 failed with 2 errors.
+# Compile of computer.v failed with 10 errors.
+# Compile of computer.v failed with 8 errors.
+# Compile of computer.v failed with 2 errors.
+# Compile of computer.v failed with 2 errors.
+# Compile of computer.v failed with 3 errors.
+# Compile of computer.v failed with 1 errors.
+# Compile of computer.v was successful.
+# Compile of computer.v was successful.
+vsim myComputer.computer
+# vsim myComputer.computer 
+# Start time: 23:32:47 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# ** Error: (vsim-3033) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(17): Instantiation of 'alu' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /computer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v
+#         Searched libraries:
+#             /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/myComputer
+# ** Error: (vsim-3033) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): Instantiation of 'pc' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /computer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v
+#         Searched libraries:
+#             /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/myComputer
+# Error loading design
+# End time: 23:32:47 on Jan 05,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# Compile of alu.v failed with 2 errors.
+# Compile of alu.v failed with 2 errors.
+# Compile of alu.v failed with 1 errors.
+# Compile of alu.v was successful.
+# Compile of program_counter.v was successful.
+vsim myComputer.computer
+# vsim myComputer.computer 
+# Start time: 23:35:08 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Error (suppressible): (vsim-3054) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(10): Port connection object port 'y' must be 1 or 16-bit wide. The actual provided is 32-bit. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/x1mux[0] File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Error (suppressible): (vsim-3054) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(11): Port connection object port 'y' must be 1 or 16-bit wide. The actual provided is 32-bit. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/y1mux[0] File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [PCDPC] - Port size (16) does not match connection size (1) for port 'in'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3722) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Missing connection for port 'clk'.
+# Error loading design
+# End time: 23:35:08 on Jan 05,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 5
+vsim myComputer.alu
+# vsim myComputer.alu 
+# Start time: 23:35:44 on Jan 05,2019
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.mux
+# ** Error (suppressible): (vsim-3054) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(10): Port connection object port 'y' must be 1 or 16-bit wide. The actual provided is 32-bit. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /alu/x1mux[0] File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Error (suppressible): (vsim-3054) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(11): Port connection object port 'y' must be 1 or 16-bit wide. The actual provided is 32-bit. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /alu/y1mux[0] File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /alu/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# Error loading design
+# End time: 23:35:44 on Jan 05,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+# Compile of alu.v was successful.
+vsim myComputer.computer
+# vsim myComputer.computer 
+# Start time: 23:37:02 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [PCDPC] - Port size (16) does not match connection size (1) for port 'in'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3722) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Missing connection for port 'clk'.
+add wave -position insertpoint sim:/computer/*
+run
+run
+# Compile of computer.v was successful.
+vsim myComputer.computer
+# End time: 23:37:41 on Jan 05,2019, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 5
+# vsim myComputer.computer 
+# Start time: 23:37:41 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [PCDPC] - Port size (16) does not match connection size (1) for port 'in'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3722) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Missing connection for port 'clk'.
+add wave -position insertpoint sim:/computer/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of program_counter.v was successful.
+vsim myComputer.computer
+# End time: 23:41:41 on Jan 05,2019, Elapsed time: 0:04:00
+# Errors: 0, Warnings: 5
+# vsim myComputer.computer 
+# Start time: 23:41:41 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [PCDPC] - Port size (16) does not match connection size (1) for port 'in'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3722) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Missing connection for port 'clk'.
+add wave -position insertpoint sim:/computer/*
+run -continue
+run
+run
+run
+run
+run
+run
+# Compile of computer.v was successful.
+vsim myComputer.computer
+# End time: 23:43:05 on Jan 05,2019, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 5
+# vsim myComputer.computer 
+# Start time: 23:43:05 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [PCDPC] - Port size (16) does not match connection size (1) for port 'in'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3722) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Missing connection for port 'clk'.
+add wave -position insertpoint sim:/computer/*
+run
+run
+run
+run
+run
+run
+run
+# Compile of program_counter.v was successful.
+vsim myComputer.computer
+# End time: 23:45:16 on Jan 05,2019, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 5
+# vsim myComputer.computer 
+# Start time: 23:45:16 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [PCDPC] - Port size (16) does not match connection size (1) for port 'in'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3722) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Missing connection for port 'clk'.
+add wave -position insertpoint sim:/computer/*
+run
+run
+run
+run
+run
+run
+# Compile of program_counter.v failed with 1 errors.
+# Compile of program_counter.v was successful.
+vsim myComputer.pc_test
+# End time: 23:49:21 on Jan 05,2019, Elapsed time: 0:04:05
+# Errors: 0, Warnings: 5
+# vsim myComputer.pc_test 
+# Start time: 23:49:21 on Jan 05,2019
+# Loading myComputer.pc_test
+# Loading myComputer.pc
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(29): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /pc_test/UUT File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3722) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(29): [TFMPC] - Missing connection for port 'clk'.
+add wave -position insertpoint sim:/pc_test/*
+run
+run
+run
+run
+force -freeze sim:/pc_test/inc 0 0
+force -freeze sim:/pc_test/reset 0 0
+run
+run
+run
+force -freeze sim:/pc_test/clock 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+# Compile of program_counter.v was successful.
+vsim myComputer.pc_test
+# End time: 23:51:58 on Jan 05,2019, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 2
+# vsim myComputer.pc_test 
+# Start time: 23:51:58 on Jan 05,2019
+# Loading myComputer.pc_test
+# Loading myComputer.pc
+add wave -position insertpoint sim:/pc_test/*
+run
+run
+run
+run
+vsim myComputer.computer
+# End time: 23:52:15 on Jan 05,2019, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0
+# vsim myComputer.computer 
+# Start time: 23:52:15 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [PCDPC] - Port size (16) does not match connection size (1) for port 'in'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/instruction_pointer File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/program_counter.v
+# ** Warning: (vsim-3722) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(25): [TFMPC] - Missing connection for port 'clk'.
+# Compile of computer.v was successful.
+vsim myComputer.computer
+# End time: 23:52:28 on Jan 05,2019, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 5
+# vsim myComputer.computer 
+# Start time: 23:52:28 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+add wave -position insertpoint sim:/computer/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of computer.v was successful.
+vsim myComputer.computer
+# End time: 23:56:28 on Jan 05,2019, Elapsed time: 0:04:00
+# Errors: 0, Warnings: 2
+# vsim myComputer.computer 
+# Start time: 23:56:28 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+add wave -position insertpoint sim:/computer/*
+run
+vsim myComputer.computer
+# End time: 23:56:46 on Jan 05,2019, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 2
+# vsim myComputer.computer 
+# Start time: 23:56:46 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+add wave -position insertpoint sim:/computer/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of computer.v was successful.
+vsim myComputer.computer
+# End time: 23:58:21 on Jan 05,2019, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 2
+# vsim myComputer.computer 
+# Start time: 23:58:21 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+add wave -position insertpoint sim:/computer/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of computer.v was successful.
+vsim myComputer.computer
+# End time: 23:59:54 on Jan 05,2019, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 2
+# vsim myComputer.computer 
+# Start time: 23:59:54 on Jan 05,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+add wave -position insertpoint sim:/computer/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of computer.v was successful.
+vsim myComputer.computer
+# End time: 00:04:37 on Jan 06,2019, Elapsed time: 0:04:43
+# Errors: 0, Warnings: 2
+# vsim myComputer.computer 
+# Start time: 00:04:37 on Jan 06,2019
+# Loading myComputer.computer
+# Loading myComputer.ram
+# Loading myComputer.alu
+# Loading myComputer.adder_16bit
+# Loading myComputer.pc
+# Loading myComputer.mux
+# ** Warning: (vsim-3017) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/computer.v(8): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /computer/main_memory File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/ram.v
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/alu.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /computer/al_unit/out1add File: /var/www/html/notebooks/verilog/hack-computer-platform/mymodules/other_modules.v
+add wave -position insertpoint sim:/computer/*
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 00:07:14 on Jan 06,2019, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 3
+# Compile of computer.v was successful.

@@ -1,0 +1,76 @@
+//Store two values to R1 and R2 and then multiply them, stores output to R3
+
+@25		25
+D = A		1111110000010000
+@R1		1
+M = D		1111001100001000
+@47		47
+D = A		1111110000010000
+@R2		2
+M = D		1111001100001000
+@R4		4
+M = D		1111001100001000
+@R4 (LOOP)	4
+D = M		1110110000000000
+@END		end
+JEQ		1111001100000010
+@R3		3
+D = M		1110110000010000
+@R2		2
+D = D + M	1110000010010000
+@R3		3
+M = D		1111001100001000
+@LOOP		loop
+JMP		1111000000000111
+(END)
+
+PROGRAM SKELETON
+ram_input = 16'b; ram_address = 64; #20; // 
+ram_input = 16'b; ram_address = 65; #20; //
+ram_input = 16'b; ram_address = 66; #20; //
+ram_input = 16'b; ram_address = 67; #20; //
+ram_input = 16'b; ram_address = 68; #20; //
+ram_input = 16'b; ram_address = 69; #20; //
+ram_input = 16'b; ram_address = 70; #20; //
+ram_input = 16'b; ram_address = 71; #20; //
+ram_input = 16'b; ram_address = 72; #20; //
+ram_input = 16'b; ram_address = 73; #20; //
+ram_input = 16'b; ram_address = 74; #20; //
+ram_input = 16'b; ram_address = 75; #20; //
+ram_input = 16'b; ram_address = 76; #20; //
+ram_input = 16'b; ram_address = 77; #20; //
+ram_input = 16'b; ram_address = 78; #20; //
+ram_input = 16'b; ram_address = 79; #20; //
+ram_input = 16'b; ram_address = 80; #20; //
+ram_input = 16'b; ram_address = 81; #20; //
+ram_input = 16'b; ram_address = 82; #20; //
+ram_input = 16'b; ram_address = 83; #20; //
+ram_input = 16'b; ram_address = 84; #20; //
+ram_input = 16'b; ram_address = 85; #20; //
+ram_input = 16'b; ram_address = 86; #20; //
+
+//Multiplication program
+ram_input = 2; ram_address = 64; #20; //@R2 
+ram_input = 16'b1111110000010000; ram_address = 65; #20; //D = M
+ram_input = 4; ram_address = 66; #20; //@R4
+ram_input = 16'b1110001100001000; ram_address = 67; #20; //M = D
+ram_input = 3; ram_address = 68; #20; //@R3
+ram_input = 16'b1110111101001000; ram_address = 69; #20; //M = 0
+ram_input = 4; ram_address = 70; #20; //@R4 (LOOP)
+ram_input = 16'b1111110000010000; ram_address = 71; #20; //D = M
+ram_input = 82; ram_address = 72; #20; //@END 
+ram_input = 16'b1110001100000010; ram_address = 73; #20; //D, JEQ
+ram_input = 1; ram_address = 74; #20; //@R1
+ram_input = 16'b1111110000010000; ram_address = 75; #20; //D = M
+ram_input = 3; ram_address = 76; #20; //@R3
+ram_input = 16'b1111000010001000; ram_address = 77; #20; //M = M + D
+ram_input = 4; ram_address = 78; #20; //@R4
+ram_input = 16'b1111110010001000; ram_address = 79; #20; //M = M - 1
+ram_input = 70; ram_address = 80; #20; //@LOOP
+ram_input = 16'b1110111111000111; ram_address = 81; #20; //0, JMP
+ram_input = 0; ram_address = 82; #20; // (END)
+ram_input = 16'b; ram_address = 83; #20; //
+ram_input = 16'b; ram_address = 84; #20; //
+ram_input = 16'b; ram_address = 85; #20; //
+ram_input = 16'b; ram_address = 86; #20; //
+

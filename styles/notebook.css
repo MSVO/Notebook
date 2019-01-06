@@ -1,0 +1,65 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.notebook {
+	background-color: white;
+	height: 100%;
+}
+	.notebook .page {
+		height: 100%;
+		background-color: transparent;
+		position: relative;
+		overflow: hidden;
+	}
+		.notebook .page .top-margin {
+			position: absolute;
+			height: auto;
+			width: 100%;
+			margin-top: 70px;
+			/*z-index: -1;*/
+		}
+			.notebook .page .top-margin .line {
+				position: relative;
+				margin-bottom: 3px;
+				height: 1px;
+				background-color: #DD0000;
+			}
+		.notebook .page .left-margin {
+			position: absolute;
+			margin-left: 90px;
+			height: 100%;
+			width: 1px;
+		}
+			.notebook .page .left-margin .line {
+				position: absolute;
+				height: 100%;
+				width: 1px;
+				background-color: black;
+			}
+		.notebook .page .title {
+			position: absolute;
+			left: 91px;
+			height: 70px;
+			top: 0;
+			width: calc(100% - 91px);
+			margin-bottom: 5px;
+		}
+		.notebook .page .content {
+			padding: 1rem;
+			padding-left: 105px;
+			position: absolute;
+			top: 75px;
+			height: calc(100% - 75px);
+			width: calc(100%);
+			overflow-y: scroll;
+			overflow-x: visible;
+			box-sizing: border-box;
+		}
+			.notebook .page .content .inside-margin {
+				margin-left: -50px;
+				overflow-x: visible;
+				position: absolute;
+				
+			}

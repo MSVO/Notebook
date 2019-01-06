@@ -1,0 +1,153 @@
+{/home/salih/Acad/LD LAB/Computer/Set1-All-Modules.v} {1 {vlog -work Computer -stats=none {/home/salih/Acad/LD LAB/Computer/Set1-All-Modules.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Q1_not
+-- Compiling module Q2_and
+-- Compiling module Q3_or
+-- Compiling module Q4_nor
+-- Compiling module Q5_xor
+-- Compiling module Q6_xnor
+-- Compiling module Q7_not_16bit
+-- Compiling module Q8_and_16bit
+-- Compiling module Q9_or_16bit
+-- Compiling module Q10_xor_16bit
+-- Compiling module Q11_or_8inp
+-- Compiling module Q12_mux
+-- Compiling module Q13_demux
+-- Compiling module switch_16bit
+-- Compiling module Q14_mux_16bit
+-- Compiling module Q15_4mux_16bit
+-- Compiling module Q16_8mux_16bit
+-- Compiling module Q17_4demux
+-- Compiling module and_3inp
+-- Compiling module Q18_8demux
+
+Top level modules:
+	Q4_nor
+	Q6_xnor
+	Q7_not_16bit
+	Q8_and_16bit
+	Q10_xor_16bit
+	Q11_or_8inp
+	Q12_mux
+	Q13_demux
+	Q14_mux_16bit
+	Q15_4mux_16bit
+	Q16_8mux_16bit
+	Q17_4demux
+	Q18_8demux
+
+} {} {}} {/home/salih/Acad/LD LAB/Computer/modules-assg2.v} {1 {vlog -work Computer -stats=none {/home/salih/Acad/LD LAB/Computer/modules-assg2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module a2q1_half_adder
+-- Compiling module a2q1_half_adder_tb
+-- Compiling module a2q2_full_adder
+-- Compiling module a2q2_full_adder_tb
+-- Compiling module a2q3_4bit_incrementer
+-- Compiling module a2q3_4bit_incrementer_tb
+-- Compiling module a2q4_4bit_adder
+-- Compiling module a2q4_4bit_adder_tb
+-- Compiling module a2q5_4bit_negator
+-- Compiling module a2q5_4bit_negator_tb
+-- Compiling module a2q6_16bit_adder
+-- Compiling module a2q6_16bit_adder_tb
+-- Compiling module a2q7_16bit_incrementer
+-- Compiling module a2q7_16bit_incrementer_tb
+-- Compiling module a2q8_16bit_negator
+-- Compiling module a2q8_16bit_negator_tb
+-- Compiling module a2q9_ALU
+-- Compiling module a2q9_ALU_tb
+
+Top level modules:
+	a2q1_half_adder_tb
+	a2q2_full_adder_tb
+	a2q3_4bit_incrementer_tb
+	a2q4_4bit_adder_tb
+	a2q5_4bit_negator_tb
+	a2q6_16bit_adder_tb
+	a2q7_16bit_incrementer_tb
+	a2q8_16bit_negator_tb
+	a2q9_ALU_tb
+
+} {} {}} {/home/salih/Acad/LD LAB/ALL SETS (1)/set3-all-modified.v} {1 {vlog -work work -stats=none {/home/salih/Acad/LD LAB/ALL SETS (1)/set3-all-modified.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module not_gate
+-- Compiling module and_gate
+-- Compiling module or_gate
+-- Compiling module tb_or_gate
+-- Compiling module xor_gate
+-- Compiling module xnor_gate
+-- Compiling module sr_latch
+-- Compiling module tb_sr_latch
+-- Compiling module sr_flipFlop
+-- Compiling module tb_sr_flipFlop
+-- Compiling module d_latch
+-- Compiling module tb_d_latch
+-- Compiling module d_flip_flop
+-- Compiling module tb_d_flip_flop
+-- Compiling module d_flip_flop_syncReset
+-- Compiling module d_flip_flop_asyncResetHigh
+-- Compiling module tb_d_flip_flop_asyncResetHigh
+-- Compiling module d_flip_flop_asyncResetLow
+-- Compiling module d_flip_flop_fall
+-- Compiling module d_flip_flop_fall_syncReset
+-- Compiling module d_flip_flop_fall_asyncResetHigh
+-- Compiling module d_flip_flop_fall_asyncResetLow
+-- Compiling module mux
+-- Compiling module mux_16Bit
+-- Compiling module mux_4way
+-- Compiling module mux_4way_16bit
+-- Compiling module mux_8way
+-- Compiling module mux_8way_16bit
+-- Compiling module demux
+-- Compiling module demux_4way
+-- Compiling module demux_4way_16bit
+-- Compiling module demux_8way
+-- Compiling module demux_8way_16bit
+-- Compiling module buffer
+-- Compiling module tb_buffer
+-- Compiling module binaryCell_1Bit
+-- Compiling module register_16Bit
+-- Compiling module and_gate_3inp
+-- Compiling module ram8
+-- Compiling module ram64
+-- Compiling module ram512
+-- Compiling module ram4k
+-- Compiling module ram16k
+-- Compiling module half_adder
+-- Compiling module incrementer_16bit
+-- Compiling module programCounter
+-- Compiling module tb_programCounter
+
+Top level modules:
+	tb_or_gate
+	xnor_gate
+	tb_sr_latch
+	tb_sr_flipFlop
+	tb_d_latch
+	tb_d_flip_flop
+	tb_d_flip_flop_asyncResetHigh
+	d_flip_flop_fall
+	d_flip_flop_fall_syncReset
+	d_flip_flop_fall_asyncResetHigh
+	d_flip_flop_fall_asyncResetLow
+	mux_16Bit
+	tb_buffer
+	ram16k
+	tb_programCounter
+
+} {} {}} /var/www/html/notebooks/verilog/hack-computer-platform/modules/ram-light.v {1 {vlog -work work -stats=none /var/www/html/notebooks/verilog/hack-computer-platform/modules/ram-light.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ram
+-- Compiling module ram_test
+
+Top level modules:
+	ram_test
+
+} {} {}} {/home/salih/Acad/LD LAB/Computer/program_counter.v} {1 {vlog -work Computer -stats=none {/home/salih/Acad/LD LAB/Computer/program_counter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module program_counter
+
+Top level modules:
+	program_counter
+
+} {} {}}
