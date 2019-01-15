@@ -35,7 +35,7 @@ module computer;
 		ram_load = 1;
 		ram_input = 5 ; ram_address = 1; #20;
 		ram_input = 25; ram_address = 2; #20;
-ram_input = 2; ram_address = 64; #20; //@R2 
+ram_input = 2; ram_address = 64; #20; //@R2
 ram_input = 16'b1111110000010000; ram_address = 65; #20; //D = M
 ram_input = 4; ram_address = 66; #20; //@R4
 ram_input = 16'b1110001100001000; ram_address = 67; #20; //M = D

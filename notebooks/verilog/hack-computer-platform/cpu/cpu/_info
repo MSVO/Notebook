@@ -1,0 +1,199 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/salih/intelFPGA/18.0/modelsim_ase/linuxaloem
+vadder
+Z0 !s110 1547047388
+!i10b 1
+!s100 Z6nm1[Xi[W:XT13X2<DoB2
+IT9?6U7eSn_RV>MeQjIeVO3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d/var/www/html/notebooks/verilog/hack-computer-platform/cpu
+Z3 w1547047383
+Z4 8/var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v
+Z5 F/var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v
+L0 8
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1547047388.000000
+Z8 !s107 /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v|
+Z9 !s90 -reportprogress|300|-work|cpu|-stats=none|/var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v|
+!i113 1
+Z10 o-work cpu
+Z11 tCvgOpt 0
+vadder_16bit
+R0
+!i10b 1
+!s100 BiV1aUn6=m?oWZNZ;z5RK3
+ISNXV4b_S7U=Sic1;_n9a20
+R1
+R2
+R3
+R4
+R5
+L0 17
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vadder_half
+R0
+!i10b 1
+!s100 Aen>>]Q[;VM5f:7k;;;cb1
+IAOQKhTEMlDR]lbTIf0[:62
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+valu
+Z12 !s110 1547045572
+!i10b 1
+!s100 `h7>89Ro2`gS7bn@:`V:Y1
+I=V[MLR4Pninid]PRD2E1e0
+R1
+R2
+Z13 w1546741114
+Z14 8/var/www/html/notebooks/verilog/hack-computer-platform/cpu/alu.v
+Z15 F/var/www/html/notebooks/verilog/hack-computer-platform/cpu/alu.v
+L0 3
+R6
+r1
+!s85 0
+31
+Z16 !s108 1547045572.000000
+Z17 !s107 /var/www/html/notebooks/verilog/hack-computer-platform/cpu/alu.v|
+Z18 !s90 -reportprogress|300|-work|cpu|-stats=none|/var/www/html/notebooks/verilog/hack-computer-platform/cpu/alu.v|
+!i113 1
+R10
+R11
+vcpu
+!s110 1547052181
+!i10b 1
+!s100 5Dh5mEHPj=SeQUjAmhaWH2
+IdJDZc=AUBhdSdj:[eHbbd2
+R1
+R2
+w1547052176
+8/var/www/html/notebooks/verilog/hack-computer-platform/cpu/cpu.v
+F/var/www/html/notebooks/verilog/hack-computer-platform/cpu/cpu.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1547052181.000000
+!s107 /var/www/html/notebooks/verilog/hack-computer-platform/cpu/cpu.v|
+!s90 -reportprogress|300|-work|cpu|-stats=none|/var/www/html/notebooks/verilog/hack-computer-platform/cpu/cpu.v|
+!i113 1
+R10
+R11
+vram
+Z19 !s110 1547045345
+!i10b 1
+!s100 YVUaheJIo>ci1NV`Pmb@j1
+IAl3Z42?CI0<?C?:1U9b<T3
+R1
+R2
+Z20 w1547045336
+Z21 8/var/www/html/notebooks/verilog/hack-computer-platform/cpu/ram.v
+Z22 F/var/www/html/notebooks/verilog/hack-computer-platform/cpu/ram.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z23 !s108 1547045345.000000
+Z24 !s107 /var/www/html/notebooks/verilog/hack-computer-platform/cpu/ram.v|
+Z25 !s90 -reportprogress|300|-work|cpu|-stats=none|/var/www/html/notebooks/verilog/hack-computer-platform/cpu/ram.v|
+!i113 1
+R10
+R11
+vtest_adder_16bit
+R0
+!i10b 1
+!s100 H=^SQ^?LR@n1NgYSJ1JOY2
+IKOYWCSRaZOEf1`a[znc1C3
+R1
+R2
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtest_alu
+R12
+!i10b 1
+!s100 PaQ=TAI3Z@:JBP][lXSkn2
+IDEh?L1z79eS^N27gIc6WI1
+R1
+R2
+R13
+R14
+R15
+L0 37
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+R11
+vtest_ram
+R19
+!i10b 1
+!s100 :EDd>TaI<30c[Did2hEZC1
+I1Rkzfkj;QfWd`LzDV;=;f2
+R1
+R2
+R20
+R21
+R22
+L0 19
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R10
+R11

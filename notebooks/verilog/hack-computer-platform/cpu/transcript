@@ -1,0 +1,69 @@
+# Loading project cpu
+# Compile of cpu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of adder.v was successful.
+# Compile of pc.v was successful.
+# Compile of alu.v was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of ram.v failed with 1 errors.
+# Compile of ram.v was successful.
+# Compile of ram.v failed with 2 errors.
+# Compile of ram.v was successful.
+vsim cpu.test_ram
+# vsim cpu.test_ram 
+# Start time: 20:19:13 on Jan 09,2019
+# Loading cpu.test_ram
+# Loading cpu.ram
+add wave -position insertpoint sim:/test_ram/*
+run
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+quit -sim
+# End time: 20:20:30 on Jan 09,2019, Elapsed time: 0:01:17
+# Errors: 1, Warnings: 1
+# Compile of alu.v was successful.
+# Compile of adder.v failed with 2 errors.
+# Compile of adder.v failed with 2 errors.
+# Compile of adder.v failed with 1 errors.
+# Compile of adder.v failed with 1 errors.
+# Compile of adder.v was successful.
+vsim cpu.test_adder_16bit
+# vsim cpu.test_adder_16bit 
+# Start time: 20:47:47 on Jan 09,2019
+# Loading cpu.test_adder_16bit
+# Loading cpu.adder_16bit
+# Loading cpu.adder
+# Loading cpu.adder_half
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v(36): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /test_adder_16bit/uut File: /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v
+# ** Error (suppressible): (vsim-3053) /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v(29): Illegal output or inout port connection for port 'cout'.
+#    Time: 0 ps  Iteration: 0  Instance: /test_adder_16bit/uut/adders[0] File: /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v
+# Error loading design
+# End time: 20:47:47 on Jan 09,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of adder.v failed with 1 errors.
+# Compile of adder.v was successful.
+vsim cpu.test_adder_16bit
+# vsim cpu.test_adder_16bit 
+# Start time: 20:53:32 on Jan 09,2019
+# Loading cpu.test_adder_16bit
+# Loading cpu.adder_16bit
+# Loading cpu.adder
+# Loading cpu.adder_half
+# ** Warning: (vsim-3015) /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v(34): [PCDPC] - Port size (1) does not match connection size (32) for port 'c0'. The port definition is at: /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /test_adder_16bit/uut File: /var/www/html/notebooks/verilog/hack-computer-platform/cpu/adder.v
+add wave -position insertpoint sim:/test_adder_16bit/*
+run
+quit -sim
+# End time: 20:54:30 on Jan 09,2019, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 1
+# Compile of cpu.v failed with 4 errors.
+# Compile of cpu.v failed with 2 errors.
+# Compile of cpu.v failed with 1 errors.
+# Compile of cpu.v failed with 1 errors.
+# Compile of cpu.v failed with 7 errors.
+# Compile of cpu.v failed with 4 errors.
+# Compile of cpu.v failed with 7 errors.
+# Compile of cpu.v was successful.

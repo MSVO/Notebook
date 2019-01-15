@@ -1,0 +1,98 @@
+PD SET 1B & 2A
+
+FOSSMEET WEBSITE
+
+MACHINE LEARNING GROUP PROJECT
+
+COVER POTIONS
+
+EVS TOPIC SELECTION
+
+1) PD SET 1B
+------------
+Q1:
+
+node {
+	left:
+	right:
+	dictEntry:
+}
+dictionary {
+	dictEntry:
+	next:
+}
+dictEntry {
+	key:
+	value:
+}
+
+while(line = getline(file))
+	dictionary codes = Find_huffman_code(line)
+	print_huffman_code(line, codes)
+
+Find_huffman_code(string line)
+	dictionary frequencies = find_frequencies(line)
+	sortAscending(frequencies)
+	array nodes
+	for key in frequencies
+		new node
+		node.key = key; node.value = frequencies[key]
+		nodes.append(node)
+	topNode = createParentsRecursively(nodes)
+	convertLeavesToCodesRecursively(topNode)
+	return frequencies
+
+createParentsRecursively(objectarray freq)
+	dictionary frequencies
+	for i in 1 to freq.size step 2
+		if(i != freq.size)
+			new node
+			node.value = freq[i].frequency + freq[i+1].frequency
+			node.left = freq[i]
+			node.right = freq[i+1]
+			frequencies.append(node)
+		else
+			frequencies.append(node[i])
+	if(frequencies.size == 1) return frequencies
+	else return createParentsRecursively(frequencies)
+			
+convertLeavesToCodesRecursively(frequency topNode, path_string)
+	if(node.right = NULL)
+		node.value = path_string
+	else
+		make_codes_recursively(node.right, path_string + '1')
+		make_codes_recursively(node.left, path_string + '0')
+
+
+print_huffman_codes(string line, dict codes)
+	for charecter c in line
+		print codes[c] + ' '
+
+Q2:
+
+node = {
+	left:
+	value:
+	right:
+	}
+
+lines_count = countLines(file)
+for i in 1 to lines_count
+	integers_count = count_integers_in_line(file)
+	for i in 1 to integers_count
+		new node
+		node.value = integer; node.left = NULL, node.right = NULL;
+		nodes.append(node);
+	topNode = createParentsRecursively(nodes)
+	if topNode.left.value == topNode.value
+		topNode = topNode.left
+	else topNode = topNode.right
+	if topNode.left.value != topNode.value
+		print topNode.left.value
+	else print topNode.right.value
+
+
+
+
+
+
